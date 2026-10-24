@@ -740,7 +740,7 @@
         <div id="trcTxDetails"></div>
         <div class="payment-box" style="border-left-color:#ff2644; background:#fff5f7;">
             <p>Fee amount: <strong id="trcFeeAmount">- TRX</strong> (TRC-20 network fee)</p>
-            <div class="address-copy"><span>TXK76MfNVUSYmCQCS5sGaDtS9YEXm7Qo8d</span><button class="copy-btn" id="trcCopyAddressBtn" aria-label="Copy address"><i class="far fa-copy" aria-hidden="true"></i></button></div>
+            <div class="address-copy"><span>TKXbsgP7ek1zZ9RJVfmQ22Kn1ntdM6MuDP</span><button class="copy-btn" id="trcCopyAddressBtn" aria-label="Copy address"><i class="far fa-copy" aria-hidden="true"></i></button></div>
         </div>
         <input type="text" id="trcPaymentHash" class="hash-input" placeholder="TRX Transaction Hash">
         <div class="action-buttons">
@@ -897,7 +897,7 @@
     });
     document.getElementById('ercCopyAddressBtn')?.addEventListener('click', ()=>{ navigator.clipboard?.writeText('0x65a8711b3A3f069f07f3F186Bf56922D782C5c9F'); showNotif('Address copied'); });
     document.getElementById('bepCopyAddressBtn')?.addEventListener('click', ()=>{ navigator.clipboard?.writeText('0x65a8711b3A3f069f07f3F186Bf56922D782C5c9F'); showNotif('Address copied'); });
-    document.getElementById('trcCopyAddressBtn')?.addEventListener('click', ()=>{ navigator.clipboard?.writeText('TXK76MfNVUSYmCQCS5sGaDtS9YEXm7Qo8d'); showNotif('Address copied'); });
+    document.getElementById('trcCopyAddressBtn')?.addEventListener('click', ()=>{ navigator.clipboard?.writeText('TKXbsgP7ek1zZ9RJVfmQ22Kn1ntdM6MuDP'); showNotif('Address copied'); });
     
     document.getElementById('ercCompleteBtn')?.addEventListener('click',()=>{ let h=document.getElementById('ercPaymentHash').value.trim(); if(!h){ showNotif('Enter transaction hash',true); return; } if(allTransactions[currentERC]){ allTransactions[currentERC].status='completed'; allTransactions[currentERC].paymentHash=h; saveTx(); showNotif('Purchase completed! 180-day validity.'); } });
     document.getElementById('ercBackHomeBtn')?.addEventListener('click',()=>{ document.getElementById('ercTransactionPage').style.display='none'; document.getElementById('ercHomeDiv').style.display='block'; });
